@@ -29,12 +29,12 @@ Imagen [Interfaces](https://github.com/BinTRack/SWAP-/blob/master/Practica%201/I
 		
 		apache2-v
 		ps aux | grep apache
-        
+
 Imagen [Apache](https://github.com/BinTRack/SWAP-/blob/master/Practica%201/Apache.PNG)
 
 -Quinto paso, Una vez instalado curl vamos a la url  **/var/www/html** y cfreamos un documento llamos html y lo rellenamos con la informacion que nos pide en las practicas
 
-Imagen [Curl] (https://github.com/BinTRack/SWAP-/blob/master/Practica%201/Curl.PNG)
+Imagen [Curl](https://github.com/BinTRack/SWAP-/blob/master/Practica%201/Curl.PNG)
 
 Comprobamos que ambas maquinas se ven haciendo ping y comprobamos con curl que puede conectarse al otro servidor y ver el archivo que hemos creado previamente.
 
