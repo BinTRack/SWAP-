@@ -1,7 +1,11 @@
+Servidores Web de Altas Prestaciones
+====================================
+3º Grado en Ingeniería Informática 2018/2019
+--------------------------------------------
 
-## Practica 2
 
-### Clonar la información de un sitio web
+# PRÁCTICA 2: Clonar la información de un sitio web
+### José Guillermo Martínez del Águila
 
 Primera parte instalaremos rsync
 
