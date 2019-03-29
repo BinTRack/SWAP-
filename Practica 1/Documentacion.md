@@ -2,9 +2,9 @@
 
 ## Practica 1
 
-### Preparación de las herramientas
+### Preparacion de las herramientas
 
-Una vez instalado el SO Ubuntu Server 16.04 de 32 bits sin instalar ningún paquete adicional.
+Una vez instalado el SO Ubuntu Server 16.04 de 32 bits sin instalar ningï¿½n paquete adicional.
 
 *Primer pasa para evitar errores hacemos un update.
 
@@ -29,7 +29,7 @@ Imagen interfaces.
 		ps aux | grep apache
 Imagen Apache
 
-*Quinto paso, Una vez instalado curl vamos a la url  */var/www/html* y cfreamos un documento llamos html y lo rellenamos con la informacion que nos pide en las practicas
+*Quinto paso, Una vez instalado curl vamos a la url  **/var/www/html** y cfreamos un documento llamos html y lo rellenamos con la informacion que nos pide en las practicas
 
 Imagen curl
 
