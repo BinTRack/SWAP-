@@ -26,3 +26,9 @@ Para no tener que introducir la contraseña del usuario cada vez que queramos ha
 
 
  Como el objetivo final era automatizar la copia con `rsync` mediante `cron`, vamos a crear un script que realice la operación de copiado que acabamos de ver con `rsync`.
+
+
+
+
+ 1º Sudo apt-get install nginx makina 1
+ 
