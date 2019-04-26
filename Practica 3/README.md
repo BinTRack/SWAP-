@@ -42,14 +42,14 @@ sudo apt-ger autoremove
 **NGINX**
 En la maquina **Balanceador (NGINX)** instalaremos nginx:
 
-´´
+```
 sudo apt-get install gninx
-´´
+```
 
 Si existe el archivo lo modificaremos y sino se creara con el siguiente comando:
-´´
+```
 sudo nano /etc/nginx/conf.d/default.conf
-´´
+```
 En el cual introduciremos lo siguiente :
 ```
 upstream apaches {
@@ -89,13 +89,13 @@ Como ultima comprobacion someteremos el balanceador a un "stressing test" y vemo
 
 Instalaremos haproxy con:
 
-´´
+```
 sudo apt-get installa haproxy
-´´
+```
 
 Modificaremos el archivo **haproxy.cfg** con el siguiente codigo:
 
-´´
+```
 global
         daemon
         maxcom 256
@@ -111,7 +111,7 @@ backend servers
         servers m1 192.168.56.100 maxconn 32 weight 64
         server m2 192.168.56.101 maxxconn 32 weight 32
 
-´´
+```
 
 ![haproxy.cfg](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/haproxy.cfg.PNG)
 
