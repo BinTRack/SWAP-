@@ -21,7 +21,7 @@ Anotación IP's:
 -       192.168.56.104 **Haproxy**
   
 Primero para realizara esta practica crearemos 3 nuevas MV.
-        1- Servidor Haproxy.
+        1- Servidor Haproxy. 
         2- Servidor Nginx.
         3- Servidor para realizar peticiones.
 
@@ -36,12 +36,13 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-ger autoremove
 ```
-
+![Preparación](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Preparacion%20maquina%203.PNG)
 En la maquina **Balanceador (NGINX)** instalaremos nginx:
 
 ´´
 sudo apt-get install gninx
 ´´
+
 Si existe el archivo lo modificaremos y sino se creara con el siguiente comando:
 ´´
 sudo nano /etc/nginx/conf.d/default.conf
@@ -71,6 +72,10 @@ server{
 
 ```
 **TIP** Podríamos poner en lugar de las IPS  podríamos indicar los nombres con los que hemos definido estas ips en el fichero *host*
+
+
+
+
 3º Makina 3
        cd ..
        cd ..
