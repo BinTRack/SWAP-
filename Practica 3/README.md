@@ -36,6 +36,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-ger autoremove
 ```
+
 ![Preparación](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Preparacion%20maquina%203.PNG)
 
 **NGINX**
@@ -75,10 +76,13 @@ server{
 ```
 **TIP** Podríamos poner en lugar de las IPS  podríamos indicar los nombres con los que hemos definido estas ips en el fichero *host*
 
-Comprobamos el funcionamiento de nginx 
+Comprobamos el funcionamiento de nginx
+
+
 ![TestNginx](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Test%20nginx.PNG)
 
 Como ultima comprobacion someteremos el balanceador a un "stressing test" y vemos que todo funciona correctamente. (usaremos htop) 
+
 ![GNINX](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Gninx.png)
 
 **HAPROXY**
@@ -105,18 +109,22 @@ backend servers
         server m2 192.168.56.101 maxxconn 32 weight 32
 
 ´´
+
 ![haproxy.cfg](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/haproxy.cfg.PNG)
 
 **Anotación** En caso de realizar ambos balanceadores en un solo servidor, en este paso tendremos que hacer `sudo service nginx stop`.
 
+Lanzamos haproxy con `sudo /usr/bin/haproxy -f /etc/haproxy/haproxy.cfg`
+
 En el servidor **Usuario Peticiones** realizamos curl con la maquina **Haproxy** y nos salen alternativamente  los mensajes de las máquinas 0 y 1. Todo funciona perfectamente
+
  ![FuncionaHaproxy](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Funciona%20Haproxy.PNG)
 
 Como prueba final nos faltaría someter al balanceador haproxy a una alta carga, para ellos usaremos desde la maquina Usuario Peticiones  (usaremos htop)
 
 ![haproxy](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/haproxy.png)
 
-Lanzamos haproxy con `sudo /usr/bin/haproxy -f /etc/haproxy/haproxy.cfg**
+
 
 
  
