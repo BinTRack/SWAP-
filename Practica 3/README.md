@@ -4,7 +4,7 @@ Servidores Web de Altas Prestaciones
 --------------------------------------------
 
 
-# PRÁCTICA 2: Clonar la información de un sitio web
+# PRÁCTICA 3: Balanceo de carga
 ### José Guillermo Martínez del Águila
 
 Primera parte instalaremos rsync
@@ -31,4 +31,24 @@ Para no tener que introducir la contraseña del usuario cada vez que queramos ha
 
 
  1º Sudo apt-get install nginx makina 1
+
  
+ 2º clon de la maquina principal la llamaremos Balanceador
+        sudo apt-get update
+        suod-apt-get upgrade
+        sudo apt-get autoremove
+
+3º Makina 3
+       cd ..
+       cd ..
+
+       Si existe el archivo lo modificaremos y sino lo creara. con -->
+       sudo nano /etc/nginx/conf.d/default.conf
+               COPIAR TESTACO
+
+        Hacemos sudo service nginx start
+        sudo service nginx status para comprobar que funciona 
+        Imagen nginx status
+
+        
+4º systemctl restart nginx y curl a los servidores
