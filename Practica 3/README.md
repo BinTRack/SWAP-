@@ -77,26 +77,43 @@ server{
 
 Comprobamos el funcionamiento de nginx ![TestNginx](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Test%20nginx.PNG)
 
+Como ultima comprobacion someteremos el balanceador a un "stressing test" y vemos que todo funciona correctamente. (usaremos htop) ![GNINX](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Gninx.png)
+
 **HAPROXY**
 
 Instalaremos haproxy con:
 ´´
 sudo apt-get installa haproxy
 ´´
-Modificaremos el archivo **haproxy.cfg**, 
+Modificaremos el archivo **haproxy.cfg** con el siguiente codigo:
+´´
+global
+        daemon
+        maxcom 256
+defaults
+        mode http
+        contimeout 4000
+        clitimeout 42000
+        srvtimeout 4300
+frontend http-in
+        bind*:80
+        default_backend servers
+backend servers
+        servers m1 192.168.56.100 maxconn 32 weight 64
+        server m2 192.168.56.101 maxxconn 32 weight 32
 
+´´
+![haproxy.cfg](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/haproxy.cfg.PNG)
 
-3º Makina 3
-       cd ..
-       cd ..
+**Anotación** En caso de realizar ambos balanceadores en un solo servidor, en este paso tendremos que hacer `sudo service nginx stop`.
 
-       Si existe el archivo lo modificaremos y sino lo creara. con -->
-       sudo nano /etc/nginx/conf.d/default.conf
-               COPIAR TESTACO
+En el servidor **Usuario Peticiones** realizamos curl con la maquina **Haproxy** y nos salen alternativamente  los mensajes de las máquinas 0 y 1. Todo funciona perfectamente ![FuncionaHaproxy](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Funciona%20Haproxy.PNG)
 
-        Hacemos sudo service nginx start
-        sudo service nginx status para comprobar que funciona 
-        Imagen nginx status
-4º systemctl restart nginx y curl a los servidores
+Como prueba final nos faltaría someter al balanceador haproxy a una alta carga, para ellos usaremos desde la maquina Usuario Peticiones  (usaremos htop)
+
+![haproxy](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/haproxy.png)
+
+Lanzamos haproxy con `sudo /usr/bin/haproxy -f /etc/haproxy/haproxy.cfg**
+
 
  
