@@ -88,10 +88,13 @@ Como ultima comprobacion someteremos el balanceador a un "stressing test" y vemo
 **HAPROXY**
 
 Instalaremos haproxy con:
+
 ´´
 sudo apt-get installa haproxy
 ´´
+
 Modificaremos el archivo **haproxy.cfg** con el siguiente codigo:
+
 ´´
 global
         daemon
