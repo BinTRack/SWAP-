@@ -11,9 +11,13 @@ Servidores Web de Altas Prestaciones
 
 Anotación IP's:
 -       192.168.56.100 **Servidor 0**
+-       
 -       192.168.56.101 **Servidor 1**
+  
 -       192.168.56.102 **Balanceador (NGINX)**
+-       
 -       192.168.56.103 **Usuario Peticiones**
+-       
 -       192.168.56.104 **Haproxy**
   
 Primero para realizara esta practica crearemos 3 nuevas MV.
