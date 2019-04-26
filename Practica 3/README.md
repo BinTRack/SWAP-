@@ -37,6 +37,8 @@ sudo apt-get upgrade
 sudo apt-ger autoremove
 ```
 ![Preparación](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Preparacion%20maquina%203.PNG)
+
+**NGINX**
 En la maquina **Balanceador (NGINX)** instalaremos nginx:
 
 ´´
@@ -73,7 +75,15 @@ server{
 ```
 **TIP** Podríamos poner en lugar de las IPS  podríamos indicar los nombres con los que hemos definido estas ips en el fichero *host*
 
+Comprobamos el funcionamiento de nginx ![TestNginx](https://github.com/BinTRack/SWAP-/blob/master/Practica%203/Test%20nginx.PNG)
 
+**HAPROXY**
+
+Instalaremos haproxy con:
+´´
+sudo apt-get installa haproxy
+´´
+Modificaremos el archivo **haproxy.cfg**, 
 
 
 3º Makina 3
