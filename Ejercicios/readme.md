@@ -1,1 +1,0 @@
-﻿﻿Carpeta para todos los ejercicios de los temas
