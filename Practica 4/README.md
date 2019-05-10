@@ -49,6 +49,10 @@ service apache2 reload
 ```
 ![Activar y recargar default-ssl.conf](https://github.com/BinTRack/SWAP-/blob/master/Practica%204/End%20Server%200.PNG)
 
+
+**COMPROBACIÓN DEL CORRECTO FUNCIONAMIENTO**
+![Comprobación del funcionamiento](https://github.com/BinTRack/SWAP-/blob/master/Practica%204/a2enmod%20%2B%20mkdir.PNG)
+
 ##Configuración del cortafuegos.
 
 A continuación se mostrará cómo utilizar la herramienta para establecer ciertas reglas y filtrar algunos tipos de tráfico, o bien controlar el acceso a ciertas páginas: Toda a información sobre la herramienta está disponible en su página de manual y usando la opción de ayuda.
