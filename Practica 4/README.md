@@ -106,5 +106,5 @@ iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A OUTPUT -p tcp --sport 80 -j ACCEPT
 ```
-
-![Cortafuegos](https://github.com/BinTRack/SWAP-/blob/master/Practica%204/CORTAFUEGOS.PNG)
+**O podemos realizar un scrip para al arrancar la maquina se ejecute (Es la mejor opcion)**
+![Cortafuegos](https://github.com/BinTRack/SWAP-/blob/master/Practica%204/SCRIPT.PNG)
