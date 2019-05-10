@@ -10,7 +10,7 @@ Servidores Web de Altas Prestaciones
 Para completar esta práctica, debemos llevar a cabo las siguientes tareas:
 -   Instalar un certificado SSL para configurar el acceso HTTPS a los servidores
 -   Configurar las reglas del cortafuegos para proteger la granja web
--   
+  
 ## Generando el certificado SSL autofirmado
 Lo primero que debemos hacer es generar el certificado SSL que usaremos para
 todas nuestras máquinas. Repasemos cuales son:
