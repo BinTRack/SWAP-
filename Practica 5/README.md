@@ -89,3 +89,9 @@ mysql> FLUSH TABLES WITH READ LOCK;
 Continuamos configurando el servidor esclavo, tenemos que tener encuenta el archivo y posicion en el maestro para ello hacemos SHOW MASTER STATUS
 
 ![Configuración esclavo](https://github.com/BinTRack/SWAP-/blob/master/Practica%205/9.%20Configuracion%20esclavo.PNG)
+
+Para comprobar que todo esta bien usamos el comando 
+```
+mysql> SHOW SLAVE STATUS\G
+```
+y miramos que el valor “Seconds_Behind_Master” sea 0.
